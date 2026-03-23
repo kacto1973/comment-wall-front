@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.app-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.comment-form textarea {
+  resize: vertical;
+}
+
+.comment-form button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.comment-form button:hover {
+  background-color: #0052cc;
+}
+
+.error-msg {
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.wall-section {
+  border-top: 2px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+/* Scroll para los comentarios */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Cards individuales */
+.comment-card {
+  background: #f8f9fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.comment-username {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-date {
+  color: #888;
+}
+
+.comment-message {
+  color: #444;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.delete-btn {
+  margin-top: 0.8rem;
+  background-color: transparent;
+  color: #d93025;
+  border: 1px solid #ffcdd2;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #d93025;
+  color: white;
+}
