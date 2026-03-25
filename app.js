@@ -1,6 +1,5 @@
 const API_URL = "https://comment-wall-api.vercel.app/comments";
 
-// Elementos del DOM
 const form = document.getElementById("comment-form");
 const usernameInput = document.getElementById("username");
 const messageInput = document.getElementById("message");
@@ -132,7 +131,7 @@ commentsList.addEventListener("click", async (e) => {
 
       try {
         await api.deleteComment(id);
-        await initApp(); // Recargar la lista
+        await initApp(); // recargar la lista
       } catch (error) {
         alert("No se pudo borrar el comentario.");
         e.target.textContent = originalText;
